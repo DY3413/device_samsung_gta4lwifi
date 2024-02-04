@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from gta4lwifi device
 $(call inherit-product, device/samsung/gta4lwifi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_tablet.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4lwifi
-PRODUCT_NAME := lineage_gta4lwifi
+PRODUCT_NAME := aosp_gta4lwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T500
 PRODUCT_MANUFACTURER := samsung
